@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="stars"></div>
+
+    <section class="full-height-section">
+      <div class="container-box">
+        <div class="card-inner">
+          <form id="age-form" class="front">
+            <h1>Age Calculator</h1>
+
+            <div class="form-group">
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name" required />
+                <label for="name" id="forName">Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth </label><br />
+              <input
+                type="number"
+                class="dob-input"
+                id="d1"
+                min="0"
+                max="3"
+                maxlength="1"
+                placeholder="D"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="d2"
+                min="0"
+                max="9"
+                maxlength="1"
+                placeholder="D"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="m1"
+                min="0"
+                max="1"
+                maxlength="1"
+                placeholder="M"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="m2"
+                min="0"
+                max="9"
+                maxlength="1"
+                placeholder="M"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="y1"
+                min="0"
+                max="1"
+                maxlength="1"
+                placeholder="Y"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="y2"
+                min="8"
+                max="9"
+                maxlength="1"
+                placeholder="Y"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="y3"
+                min="0"
+                max="9"
+                maxlength="1"
+                placeholder="Y"
+                required
+              />
+              <input
+                type="number"
+                class="dob-input"
+                id="y4"
+                min="0"
+                max="9"
+                maxlength="1"
+                placeholder="Y"
+                required
+              />
+
+              <div class="calendar-icon">
+                <input type="date" class="calendar-input" id="calendar" />
+              </div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+
+          <div class="back">
+            <h1>Result</h1>
+            <div id="result">
+              <p id="age-message"></p>
+            </div>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
